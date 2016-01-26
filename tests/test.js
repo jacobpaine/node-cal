@@ -1,7 +1,13 @@
 'use strict';
+
 const { expect } = require('chai');
-describe('test suite', () => {
-    it('true should be true', () => {
-       expect(true).to.be.true;
+const { execSync } = require('child_process');
+
+describe('cal', () => {
+  it('should handle the current month', () => {
+    const goal = execSync('cal').toString();
+    const output = execSync('./cal.js').toString();
+
+       expect(output).to.be.equal(goal);
   });
 });
