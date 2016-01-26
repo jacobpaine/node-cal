@@ -1,0 +1,19 @@
+{
+  "name": "node-cal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobpaine/node-cal.git"
+  },
+  "author": "Jacob Paine <painejacob@gmail.com> (https://www.jacobpaine.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobpaine/node-cal/issues"
+  },
+  "homepage": "https://github.com/jacobpaine/node-cal#readme"
+}
