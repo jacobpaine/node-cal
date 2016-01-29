@@ -63,10 +63,16 @@ describe('cal', () => {
       it('returns 4 (Thursday) for March 1, 2300', () => {
         expect(zellers.getDay(2300, 3, 1)).to.equal(4);
       });
-            // 2000, 3, 1 === 3
-      // 2100, 3, 1 === 1
-      // 2200, 3, 2 === 0
-      // 2300, 3, 1 === 4
+
     });
   });
+
+      //describe('.center', () => {
+        //it('should handle January', () => {
+          //expect(center('Jan 2016')).to.equal('    January 2016');
+        //});
+        //it('should handle Feb', () => {
+          //expect(center('Feb 2016')).to.equal('   February 2016');
+        //});
+      //});
 });
