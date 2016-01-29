@@ -85,12 +85,12 @@ let numSpace = " ";
   console.log("numberDaysSecondWeek", numberDaysSecondWeek)
 for (let i=0; i<numberDaysSecondWeek.length; i++){
   numberDaysSecondWeek = numberDaysSecondWeek[i];
+console.log("numberDaysSecondWeek.length", numberDaysSecondWeek[i]);
 }
   console.log("numberDaysSecondWeek", numberDaysSecondWeek)
-console.log("numberDaysSecondWeek.length", numberDaysSecondWeek.length);
 
 console.log(stringSpace + numberDaysFirstWeek.join(" "));
-console.log(_.join(numberDaysSecondWeek, " "));
+console.log(_.join(numberDaysSecondWeek));
 console.log(numberDaysThirdWeek.join(" "));
 console.log(numberDaysFourthWeek.join(" "));
 console.log(numberDaysFifthWeek.join(" "));
