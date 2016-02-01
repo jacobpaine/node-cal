@@ -67,12 +67,12 @@ describe('cal', () => {
     });
   });
 
-      //describe('.center', () => {
-        //it('should handle January', () => {
-          //expect(center('Jan 2016')).to.equal('    January 2016');
-        //});
-        //it('should handle Feb', () => {
-          //expect(center('Feb 2016')).to.equal('   February 2016');
-        //});
-      //});
+      describe('.center', () => {
+        it('should handle January', () => {
+          expect(center('Jan 2016')).to.equal('    January 2016');
+        });
+        it('should handle Feb', () => {
+          expect(center('Feb 2016')).to.equal('   February 2016');
+        });
+      });
 });
