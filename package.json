@@ -12,6 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/jacobpaine/node-cal.git"
   },
+  "eslintConfig":{
+    "env": {
+      "mocha": true,
+      "node": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console":0
+    }
+  },
   "author": "Jacob Paine <painejacob@gmail.com> (https://www.jacobpaine.com/)",
   "license": "MIT",
   "bugs": {

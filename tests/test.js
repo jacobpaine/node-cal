@@ -1,5 +1,6 @@
 'use strict';
-const zellers = require('../lib/zellers')
+const zellers = require('../lib/zellers');
+const cli = require('../lib/cli');
 const { expect } = require('chai');
 const { execSync } = require('child_process');
 
@@ -67,12 +68,13 @@ describe('cal', () => {
     });
   });
 
-      describe('.center', () => {
-        it('should handle January', () => {
-          expect(center('Jan 2016')).to.equal('    January 2016');
+      describe('leapYearFunc', () => {
+       const cli = require('../lib/cli.js');
+        it('should handle leap year 2016', () => {
+          expect(cli.leapYearFunc(2016)).to.equal(true);
         });
-        it('should handle Feb', () => {
-          expect(center('Feb 2016')).to.equal('   February 2016');
+        it('should handle leap year 2015', () => {
+          expect(cli.leapYearFunc(2015)).to.equal(false);
         });
       });
 });
